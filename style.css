@@ -1,0 +1,127 @@
+/* .............. universel style ................ */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+/* ................... header .................... */
+
+/* .... announce bar ..... */
+
+.announce-bar{
+    width: 100%;
+    background: #f6b116;
+    height: auto;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+}
+.announce{
+    font-family: "Inter", serif;
+    font-size: 14px;
+    color: white;
+    border-right: 3px solid white; 
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+#announce-one{
+    animation: typing1 4s steps(48) infinite alternate, blinkCursor 0.9s infinite;
+}
+@media screen and (max-width: 425px) {
+    .announce{
+        font-size: 12px;
+    }
+}
+@keyframes typing1 {
+    from{
+        width: 0ch;
+    }
+    to{
+        width: 40ch;
+    }
+    
+}
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* ....... navbar ....... */
+
+.navbar{
+    width: 100%;
+    display: flex;
+    background: rgb(0, 0, 0);
+    align-items: center;
+    padding: 35px;
+    justify-content: space-between;
+}
+
+.search-bar{
+    width: 100%;
+    min-width: 300px;
+    padding: 0px 0px 0px 12px;
+    background: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+.search-bar:hover{
+
+    box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.733);
+}
+.search{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-family: "Inter", serif;
+    font-size: 12px;
+    opacity: 0.8;
+}
+.fa-magnifying-glass{
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50px;
+}
+.fa-magnifying-glass:hover{
+    background: rgba(0, 0, 0, 0.26);
+}
+
+.logo-box{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo{
+    width: 100%;
+}
+
+.nav-icons{
+    width: auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.nav-icon-box{
+    width: 100px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-icon-box>span{
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Lato", serif;
+    letter-spacing: 2.8px;
+}
+.nav-icon-box>i{
+    font-size: 20px;
+    color: white;
+}
