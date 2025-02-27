@@ -196,6 +196,9 @@
 }
 
 
+.nav-iBars-box{
+    display: none;
+}
 @media screen and (max-width: 1023px) {
     .navbar{
         height: 160px;
@@ -235,8 +238,10 @@
     .fa-magnifying-glass{
         padding: 12px;
     }
+    .nav-iBars-box{
+        display: flex;
+    }
 }
-
 
 
 /* ............. menu bar ............... */
@@ -274,6 +279,57 @@
     font-family: "Inter", serif;
     letter-spacing: 2.8px;
 }
-@media screen {
-    
+#menu-bar-toggle{
+    display: none;
+}
+.none{
+    display: none;
+}
+@media screen and (max-width: 1023px) {
+    #menu-bar-toggle:checked ~ div.menu-bar{
+        transform: scaleY(100%);
+    }
+    .menu-bar{
+        transform: scaleY(100%);
+        transform-origin: top;
+        transition: 0.3s ease-in-out;
+        background: white;
+        padding: 0;
+    }
+    .menu-bar-container{
+        padding: 20px;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: start;
+        background: #f8f8f8;
+        border-radius: 10px;
+        padding: 20px 10px;
+        row-gap: 10px;
+    }
+    .menu-item{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 40px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+    }
+    .menu-item>a{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0px 5px;
+    }
+    .menu-item>a>span{
+        color: black;
+    }
+    .none{
+        display: block;
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        letter-spacing: 2.8px;
+        padding: 10px;
+    }
 }
