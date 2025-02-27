@@ -236,3 +236,44 @@
         padding: 12px;
     }
 }
+
+
+
+/* ............. menu bar ............... */
+
+.menu-bar{
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.192);
+}
+.menu-bar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 35px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+.menu-item>a{
+    text-decoration: none;
+}
+.menu-item>a>span{
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Inter", serif;
+    letter-spacing: 2.8px;
+}
+@media screen {
+    
+}
