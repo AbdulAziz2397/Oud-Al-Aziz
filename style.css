@@ -9,52 +9,6 @@
 
 /* ................... header .................... */
 
-/* .... announce bar ..... */
-
-.announce-bar {
-    width: 100%;
-    background: #f6b116;
-    height: auto;
-    padding: 8px;
-    display: flex;
-    justify-content: center;
-}
-
-.announce {
-    font-family: "Inter", serif;
-    font-size: 14px;
-    color: white;
-    border-right: 3px solid white;
-    text-wrap: nowrap;
-    overflow: hidden;
-}
-
-#announce-one {
-    animation: typing1 4s steps(48) infinite alternate, blinkCursor 0.9s infinite;
-}
-
-@media screen and (max-width: 425px) {
-    .announce {
-        font-size: 12px;
-    }
-}
-
-@keyframes typing1 {
-    from {
-        width: 0ch;
-    }
-
-    to {
-        width: 40ch;
-    }
-
-}
-
-@keyframes blinkCursor {
-    50% {
-        border-color: transparent;
-    }
-}
 
 /* ....... container ....... */
 
@@ -117,6 +71,64 @@
     }
 }
 
+
+/* ......... web title ............ */
+.web-title1-container{
+    display: flex;
+    margin: 15px 0px;
+    justify-content: center;
+    align-items: center;
+}
+.web-title1{
+    text-transform: capitalize;
+}
+
+/* .... announce bar ..... */
+
+.announce-bar {
+    width: 100%;
+    background: #f6b116;
+    height: auto;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.announce {
+    font-family: "Inter", serif;
+    font-size: 14px;
+    color: white;
+    border-right: 3px solid white;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+#announce-one {
+    animation: typing1 4s steps(48) infinite alternate, blinkCursor 0.9s infinite;
+}
+
+@media screen and (max-width: 425px) {
+    .announce {
+        font-size: 12px;
+    }
+}
+
+@keyframes typing1 {
+    from {
+        width: 0ch;
+    }
+
+    to {
+        width: 40ch;
+    }
+
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}
 
 /* ....... navbar ....... */
 
@@ -402,6 +414,7 @@
 .banner-container {
     width: 100%;
     height: auto;
+    margin-bottom: 30px;
 }
 
 .banner-container>img {
@@ -412,7 +425,7 @@
 
 .card-container {
     display: flex;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .cards {
@@ -427,6 +440,7 @@
     height: 450px;
     background: #f8f8f8;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .product-img {
@@ -456,6 +470,7 @@
     color: rgba(255, 255, 255, 0.712);
     background: black;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .card:hover>div.product-img>div.card-icons-box {
