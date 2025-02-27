@@ -347,6 +347,7 @@
 @media screen and (max-width: 1023px) {
     #menu-bar-toggle:checked~div.menu-bar {
         transform: scaleY(100%);
+        z-index: 100;
     }
 
     .menu-bar {
