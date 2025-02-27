@@ -685,6 +685,7 @@
     }
     .cards{
         height: auto;
+        margin: 10px;
         flex-wrap: nowrap;
         padding: 10px 0px;
     }
