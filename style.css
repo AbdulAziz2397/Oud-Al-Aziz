@@ -150,12 +150,12 @@
     font-size: 12px;
     opacity: 0.8;
 }
-.fa-magnifying-glass{
+.search-bar-icon{
     cursor: pointer;
     padding: 15px;
     border-radius: 50px;
 }
-.fa-magnifying-glass:hover{
+.search-bar-icon:hover{
     background: rgba(0, 0, 0, 0.26);
 }
 
@@ -232,7 +232,7 @@
     .icon-describ{
         display: none;
     }
-    .fa-magnifying-glass{
+    .search-bar-icon{
         padding: 12px;
     }
     .nav-iBars-box{
@@ -243,8 +243,11 @@
     .logo-box{
         width: 130px;
     }    
-    .fa-magnifying-glass{
-        padding: 8px;
+    .search-bar{
+        padding: 0px 10px;
+    }
+    .search-bar-icon{
+        padding: 6px;
     }
 }
 
@@ -340,14 +343,16 @@
     }
 }
 
-
-
-/* ............. banner ............... */
+/* ..........  main-body ......... */
 
 .main-body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
+/* ............. banner ............... */
+
 .banner-container{
     width: 100%;
     height: auto;
@@ -355,3 +360,55 @@
 .banner-container>img{
     width: 100%;
 }
+
+/* .............. product card ................. */
+
+.card-container{
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 280px;
+    height: 450px;
+    background: #f8f8f8;
+}
+.product-img{
+    height: 280px;
+    background: url(./assets/images/card1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-img:hover{
+    background: url(./assets/images/card1h.webp);
+}
+
+
+.card-icons-box{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #f6b116;
+}
+.card-icons-box>i{
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: black;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
