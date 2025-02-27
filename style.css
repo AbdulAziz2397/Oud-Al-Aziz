@@ -48,33 +48,101 @@
         border-color: transparent;
     }
 }
+/* ....... container ....... */
+
+.container{
+    width: 100%;
+}
+
+/* max-width: 2560px; */
+@media screen and (max-width: 3840px) {
+    .container{
+        max-width: 2048px;
+    }
+}
+
+@media screen and (max-width: 3200px) {
+    .container{
+        max-width: 1920px;
+    }
+}
+
+@media screen and (max-width: 2560px) {
+    .container{
+        max-width: 1536px;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .container{
+        max-width: 1400px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .container{
+        max-width: 1280px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        max-width: 976px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container{
+        max-width: 425px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container{
+        max-width: 100%;
+    }
+}
+
 
 /* ....... navbar ....... */
 
 .navbar{
     width: 100%;
+    height: 140px;
     display: flex;
     background: rgb(0, 0, 0);
     align-items: center;
-    padding: 35px;
-    /* justify-content: space-between; */
+    justify-content: center;
 }
-
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-box{
+    width: 100%;
+}
 .search-bar{
     width: 100%;
-    padding: 0px 0px 0px 12px;
+    max-width: 320px;
+    padding: 0px 0px 0px 15px;
     background: white;
     border-radius: 50px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .search-bar:hover{
-
     box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.733);
 }
 .search{
     width: auto;
-    max-width: 400px;
     outline: none;
     border: none;
     font-family: "Inter", serif;
@@ -83,7 +151,7 @@
 }
 .fa-magnifying-glass{
     cursor: pointer;
-    padding: 12px;
+    padding: 15px;
     border-radius: 50px;
 }
 .fa-magnifying-glass:hover{
@@ -91,7 +159,7 @@
 }
 
 .logo-box{
-    width: 150px;
+    width: 520px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -102,10 +170,11 @@
 }
 
 .nav-icons{
-    width: auto;
+    width: 100%;
     display: flex;
     gap: 50px;
     align-items: center;
+    justify-content: end;
 }
 .nav-icon-box{
     width: 100px;
@@ -126,10 +195,44 @@
     color: white;
 }
 
-@media screen and (max-width: 768px) {
-    .nav-icons{
-        display: flex;
-        order: 3;
+
+@media screen and (max-width: 1023px) {
+    .navbar{
+        height: 160px;
     }
-    
+    .nav-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+    }
+    .logo-box{
+        width: 180px;
+    }
+    .search-box{
+        order: 3;
+        width: 100%;
+        grid-column: span 2;
+    }
+    .search-bar{
+        max-width: 100%;
+        padding: 0px 0px 0px 12px;
+    }
+    .search{
+        width: 100%;
+    }
+    .nav-icon-box{
+        width: auto;
+    }
+    .nav-icons{
+        gap: 20px;
+    }
+    .nav-icon-box{
+        gap: 0px;
+    }
+    .icon-describ{
+        display: none;
+    }
+    .fa-magnifying-glass{
+        padding: 12px;
+    }
 }
