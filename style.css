@@ -666,9 +666,12 @@
     }
     .card-container{
         overflow: auto;
+        height: auto;
     }
     .cards{
+        height: auto;
         flex-wrap: nowrap;
+        padding: 10px 0px;
     }
 }
 
