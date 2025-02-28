@@ -1,9 +1,9 @@
 /* .............. universel style ................ */
 * {
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: "Inter", serif;
+    font-family: "Inter", sans-serif;
     /* border: 1px solid red; */
 }
 
@@ -665,15 +665,39 @@
 
 @media screen and (max-width: 1440px) {
     .card {
-        width: 220px;
+        width: 240px;
     }
     
     .product-img {
-        height: 220px;
+        height: 240px;
+    }
+}
+@media screen and (max-width: 1245px) {
+    .card-container{
+        display: flex;
+        justify-content: center;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .card {
+        width: 190px;
+    }
+    
+    .product-img {
+        height: 190px;
     }
 }
 
 @media screen and (max-width: 1024px) {
+    .card-container{
+        display: flex;
+        justify-content: start;
+    }
+    .cards{
+        display: flex;
+    }
     .card {
         width: 280px;
     }
@@ -692,3 +716,152 @@
         padding: 10px 0px;
     }
 }
+
+
+/* .................... product-categories  ..................... */
+
+.product-categories{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    margin-top: 20px;
+}
+.product-category{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.category-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.category-img1{
+    background: url(./assets/images/circle1.webp) no-repeat center;
+    background-size: contain;
+}
+.category-img2{
+    background: url(./assets/images/circle2.webp) no-repeat center;
+    background-size: contain;
+}
+.category-img3{
+    background: url(./assets/images/circle3.webp) no-repeat center;
+    background-size: contain;
+}
+.category-img4{
+    background: url(./assets/images/circle4.webp) no-repeat center;
+    background-size: contain;
+}
+.category-img5{
+    background: url(./assets/images/circle5.webp) no-repeat center;
+    background-size: contain;
+}
+.category-img6{
+    background: url(./assets/images/circle6.webp) no-repeat center;
+    background-size: contain;
+}
+
+
+@media screen and (max-width: 3840px) {
+    .product-categories{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-top: 30px;
+    }
+    .category-img{
+        max-width: 230px;
+        max-height: 230px;
+    }
+}
+
+
+
+@media screen and (max-width: 3200px) {
+    .container {
+        max-width: 1920px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 2560px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .container {
+        max-width: 1400px;
+    }
+    .category-img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .product-category{
+        height: 220px;
+    }
+    .container {
+        max-width: 1280px;
+    }
+    .category-img{
+        max-width: 160px;
+        max-height: 160px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .product-category{
+        height: 220px;
+    }
+    .product-categories{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .category-img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-category{
+        height: 180px;
+    }
+    .container {
+        max-width: 720px;
+    }
+    .category-img{
+        max-width: 130px;
+        max-height: 130px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .product-category{
+        height: 160px;
+    }
+    .product-categories{
+        grid-template-columns: 1fr 1fr;
+    }
+    .container {
+        max-width: 425px;
+    }
+    .category-img{
+        max-width: 140px;
+        max-height: 140px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        max-width: 100%;
+    }
+    .category-img{
+        max-width: 120px;
+        max-height: 120px;
+    }
+}
+
